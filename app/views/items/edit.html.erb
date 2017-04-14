@@ -1,0 +1,9 @@
+<%= form_for(@item) do |f| %>
+ 		<%= f.label :item_name %>
+		<%= f.text_field :item_name %><br><br>
+		<%= f.label :item_description %>
+		<%= f.text_field :item_description %><br><br>
+		<%= f.label :item_cost %>
+		<%= f.text_field :item_cost %><br><br>
+        <%= f.submit "Save changes", :class => 'altbtn altbtn-lg altbtn-outline' %>
+<% end %>

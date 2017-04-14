@@ -4,5 +4,6 @@
 <br><br>
 <p><%= @item.item_description %></p>
 <br><br>
-<p><%= @item.item_cost %></p>
+<p><%= @item.item_cost %></p><br><br>
+<p><%= link_to 'Edit Item', edit_item_path(@item.id) %></p>
 </center>
