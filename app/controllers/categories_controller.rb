@@ -29,7 +29,7 @@ class CategoriesController < ApplicationController
   def update
     @category = Category.find(params[:id])
     if @category.update_attributes(category_params)
-      redirect_to @community
+      redirect_to @category
     else
       render 'edit'
     end
