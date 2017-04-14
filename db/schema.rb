@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170414040657) do
+ActiveRecord::Schema.define(version: 20170414153749) do
 
   create_table "categories", force: :cascade do |t|
     t.string "category_name"
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.integer "category_id"
+    t.string  "item_name"
+    t.string  "item_description"
+    t.integer "item_price"
   end
 
 end
