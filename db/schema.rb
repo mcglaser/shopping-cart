@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20170414153749) do
     t.integer "category_id"
     t.string  "item_name"
     t.string  "item_description"
-    t.integer "item_price"
+    t.decimal "item_cost",        precision: 8, scale: 2
   end
 
 end

@@ -6,8 +6,7 @@ class CreateItems < ActiveRecord::Migration
       t.integer :category_id
       t.string :item_name
       t.string :item_description
-      t.string :item_price
-      t.integer :item_price
+      t.decimal :item_cost, :precision => 8, :scale => 2
 
 
 
